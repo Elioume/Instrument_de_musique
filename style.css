@@ -53,6 +53,9 @@
 .reverse{
     flex-direction: row-reverse;
 }
+.justify-end {
+  justify-content: flex-end;
+}
 .justify-between{
     justify-content: space-between;
 }
@@ -207,7 +210,15 @@ les resolutions d'ecrans d'apres un petit script sass*/
 /*--------------------------------------------------
 ✍️ Styliser du texte
 ---------------------------------------------------*/
-
+h2 {
+  margin-top: 50px;
+}
+h3 {
+  margin-top: 20px;
+}
+p {
+  margin-top: 10px;
+}
 a {
     text-decoration: none;
     color: black;
@@ -223,13 +234,22 @@ a {
 
 /* HEADER */
 
-header {
-    position:sticky;
-    top:0;
-    z-index: 999;
-    background-color: white;
-    border-bottom: 1px solid #000000;
+.imgHeader {
+  height: 50px;
 }
+
+header {
+  position:sticky;
+  top:0;
+  z-index: 999;
+  background-color: white;
+  border-bottom: 1px solid #000000;
+}
+
+/* .barreDroite {
+  margin-right: 70px;
+  border-right: 1px solid #000000;
+} */
 
 /* HERO */
 
@@ -239,23 +259,53 @@ header {
 
 /* NOS PRODUITS */
 
+.imgProduit {
+  height: 200px;
+  border-radius: 14px;
+}
+
 .carteProduit {
-    
+  box-shadow: 1px 1px 5px 1px lightgray;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.btn {
+  background: orange;
+  padding: 10px;
+  border-radius: 14px;
 }
 
 /* NOS SERVICES */
 
-.carteService {
+.carteServie {
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 1px lightgray;
+}
 
+.imgService {
+  height: 300px;
+  border-radius: 14px;
 }
 
 /* AVIS CLIENT */
 
 .carteClient {
-
+  border-radius: 14px;
+  padding: 20px;
+  background: rgb(225, 225, 225);
 }
 
 /* Autre */
 .bgBlue {
     background-color: blue;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
 }

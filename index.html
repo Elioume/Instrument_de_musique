@@ -10,16 +10,16 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="flex justify-between align-center">
+        <nav class="flex justify-between align-center container-1000">
 
             <!-- Partie Gauche / Logo -->
-            <a href=""><img src="assets/ogo-instrument-1.png" alt="Logo MusicHalle" class="large-3 container-1000"></a>
+            <a href="" class="large-1"><img src="assets/ogo-instrument-1.png" alt="Logo MusicHalle" class="imgHeader"></a>
 
             <!-- Partie Droite / UL, Redirection de page -->
-            <ul class="flex justify-between noPuce large-6 container-1000">
-                <li><a href="">Nos Produits</a></li>
-                <li><a href="">Nos Services</a></li>
-                <li><a href="">Avis Client</a></li>
+            <ul class="flex justify-between noPuce large-6">
+                <li><a href="#NosProduits">Nos Produits</a></li> <!-- class="barreDroite" -->
+                <li><a href="#NosServices">Nos Services</a></li> <!-- class="barreDroite" -->
+                <li><a href="#AvisClient">Avis Client</a></li>
             </ul>
 
         </nav>
@@ -35,24 +35,29 @@
         </section>
 
         <!-- Nos Produits -->
-        <section>
+        <section id="NosProduits">
 
-            <h2 class="text-center">Nos Produits</h2>
+            <h2 class="text-center mb-30">Nos Produits</h2>
 
             <!-- Div pour flex les cartes produits -->
-            <div class="container-1000 flex justify-between">
+            <div class="container-1000 flex justify-between" id="nosProduitsJS">
 
                 <!-- Placeholder carte produit -->
-                <div class="large-4">
+                <div class="large-4 carteProduit mb-30">
                     <!-- Partie haute / Image produit -->
                     <div>
-                        <img src="assets/placeholder.jpg" alt="">
+                        <img src="assets/placeholder.jpg" alt="" class="large-12 imgProduit">
                     </div>
 
                     <!-- Partie basse / Titre + Desc -->
                     <div>
-                        <h3>Titre</h3>
+                        <h3 class="text-center">Titre</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab laudantium praesentium consequatur ex aliquam et rerum iste doloremque officiis, ullam veniam eveniet excepturi accusantium, tempore repellat illum qui aut odit.</p>
+                    </div>
+
+                    <!-- Bouton -->
+                    <div class="flex justify-end">
+                        <p class="btn">Voir plus</p>
                     </div>
                 </div>
 
@@ -61,15 +66,75 @@
         </section>
 
         <!-- Nos Services -->
-        <section>
+        <section id="NosServices">
 
+            <h2 class="text-center mb-30">Nos Services</h2>
+            <div id="nosServicesJS">
+                <!-- Carte placeholder img à gauche, txt à droite -->
+                <div class="flex justify-between container-1000 carteService align-center">
+
+                    <!-- Image Gauche -->
+                    <div class="large-6">
+                        <img src="assets/placeholder.jpg" alt="" class="large-12 imgService">
+                    </div>
+
+                    <!-- Texte Droite -->
+                    <div class="large-6">
+                        <h2>Titre</h2>
+                        <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
+                    </div>
+                </div>
+
+                <!-- Carte placeholder txt à gauche, img à droite -->
+                <div class="flex justify-between container-1000 carteService align-center">
+
+                    <!-- Texte Gauche -->
+                    <div class="large-6">
+                        <h2>Titre</h2>
+                        <p>Participez à nos ateliers musicaux pour explorer et apprendre à jouer des instruments du monde. Rencontrez des artistes locaux et partagez votre passion pour la musique.</p>
+                    </div>
+
+                    <!-- Image Droite -->
+                    <div class="large-6">
+                        <img src="assets/placeholder.jpg" alt="" class="large-12 imgService">
+                    </div>
+                    
+                </div>
+            </div>
         </section>
 
         <!-- Avis Clients -->
-        <section>
+        <section id="AvisClient">
+
+            <h2 class="text-center mb-30">Avis Client</h2>
+
+            <!-- Div pour flex les cartes -->
+            <div class="container-1000 flex justify-between" id="avisClientJS">
+
+                <!-- Placeholder carte Avis Clients -->
+                <div class="carteClient large-4">
+
+                    <div class="flex justify-between">
+                        <h4>Prénom</h4>
+                        <h4>note/5</h4>
+                    </div>
+
+                    <h4 class="mt-10">Presta</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequuntur eaque deserunt corrupti impedit excepturi similique eum odit adipisci, nam magnam distinctio ducimus quam pariatur eos corporis sint omnis libero?</p>
+                </div>
+
+            </div>
 
         </section>
 
+        <!-- Promesses Entreprise -->
+        <section>
+
+            <div id="promessesJS">
+
+            </div>
+            
+        </section>
     </main>
 
 
