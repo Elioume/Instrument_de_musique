@@ -34,7 +34,13 @@
     /*vous pouvez enlever le padding si il vous gene*/
     padding: 16px;
 }
-
+.container-1000Header{
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
 .responsive{
     /*Les images doivent d'adapter a leur parents*/
     width: 100%;
@@ -127,9 +133,12 @@ les resolutions d'ecrans d'apres un petit script sass*/
   .large-12 {
     width: calc(100% - 0 * var(--gap) / 1);
   }
+  .borderPromessesLarge {
+  border-right: 1px solid #000000;
+}
   
 /*Tablets*/
-@media all and (max-width: 700px) {
+@media all and (max-width: 800px) {
     .medium-1 {
       width: calc(8.3333333333% - 11 * var(--gap) / 12);
     }
@@ -166,6 +175,9 @@ les resolutions d'ecrans d'apres un petit script sass*/
     .medium-12 {
       width: calc(100% - 0 * var(--gap) / 1);
     }
+    .borderPromessesMedium {
+  border-right: 1px solid #000000;
+  }
   }
 /*Smartphones*/
 @media all and (max-width: 440px) {
@@ -205,6 +217,12 @@ les resolutions d'ecrans d'apres un petit script sass*/
     .small-12 {
       width: calc(100% - 0 * var(--gap) / 1);
     }
+    .borderPromessesSmall {
+      border-right: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 20px;
+  }
+    
   }
 
 /*--------------------------------------------------
@@ -221,6 +239,7 @@ h3 {
 }
 p {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 a {
     text-decoration: none;
@@ -245,7 +264,7 @@ header {
   position:sticky;
   top:0;
   z-index: 999;
-  background-color: #f9f7e4;
+  background-color: #f5eaba;
   border-bottom: 1px solid #000000;
 }
 
@@ -267,6 +286,10 @@ header {
   padding-bottom: 30px;
 }
 /* NOS PRODUITS */
+
+.pProduit {
+  font-size: 20px;
+}
 
 .imgProduit {
   height: 200px;
@@ -301,6 +324,10 @@ header {
   border-radius: 14px;
 }
 
+.pService {
+  font-size: 20px;
+}
+
 /* AVIS CLIENT */
 
 .carteClient {
@@ -315,6 +342,10 @@ header {
   background-color: blue;
 }
 
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -322,6 +353,20 @@ header {
 .mt-10 {
   margin-top: 10px;
 }
+
+/* promesses */
+
+.cartePromesses {
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 1px 1px 5px 2px gray;
+  background-color: white;
+  font-size: 20px;
+}
+
+/* .borderPromesses {
+  border-right: 1px solid #000000;
+} */
 
 /* background image */
 
@@ -343,10 +388,13 @@ header {
 }
 
 .footer-50 {
-  margin-top: 50px;
   padding-top: 50px;
 }
 
 .bold {
   font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #000000;
 }

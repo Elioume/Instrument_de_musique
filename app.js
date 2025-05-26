@@ -15,10 +15,10 @@ function afficherProduits(produit) {
     tabProduits.forEach(i=>{
         document.getElementById(`nosProduitsJS`).innerHTML += `
             <!-- Placeholder carte produit -->
-                <div class="large-4 carteProduit mb-30">
+                <div class="large-4 medium-6 small-12 carteProduit mb-30">
                     <!-- Partie haute / Image produit -->
                     <div>
-                        <img src="${i.imageUrl}" alt="" class="large-12 imgProduit">
+                        <img src="${i.imageUrl}" alt="" class="large-12 medium-12 small-12 imgProduit">
                     </div>
 
                     <!-- Partie basse / Titre + Desc -->
@@ -42,13 +42,13 @@ function afficherServices(service) {
                 <div class="flex justify-between container-1000 carteService align-center">
 
                     <!-- Image Gauche -->
-                    <div class="large-6">
-                        <img src="${i.imageUrl}" alt="" class="large-12 imgService">
+                    <div class="large-6 medium-6 small-12">
+                        <img src="${i.imageUrl}" alt="" class="large-12 medium-12 small-12 imgService">
                     </div>
 
                     <!-- Texte Droite -->
-                    <div class="large-6">
-                        <h2>${i.nom}</h2>
+                    <div class="large-6 medium-6 small-12">
+                        <p class="bold pService">${i.nom}</p>
                         <p>${i.description}</p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ function afficherAvis(temoignage) {
     tabProduits.forEach(i=>{
     document.getElementById(`avisClientJS`).innerHTML += `
     <!-- Placeholder carte Avis Clients -->
-                <div class="carteClient large-4">
+                <div class="carteClient mb-30 large-4 medium-4 small-12">
 
                     <div class="flex justify-between">
                         <h4>${i.prenom}</h4>
@@ -69,11 +69,4 @@ function afficherAvis(temoignage) {
                     <h4 class="mt-10">${i.prestation}</h4>
                     <p>${i.commentaire}</p>
                 </div>
-`})}
-
-// modifier le json pour que les promesses soit un autre tableau avec 1 image et la promesse
-function afficherPromesses(promesse) {
-    let tabProduits = promesse.promesses
-    tabProduits.forEach(i=>{
-    document.getElementById(`promessesJS`).innerHTML += `
 `})}
