@@ -252,11 +252,12 @@ header {
 } */
 
 /* HERO */
-
-.bgHero {
-
+.mt-75 {
+  margin-top: 75px;
 }
-
+.mt-30 {
+  margin-top: 30px;
+}
 /* NOS PRODUITS */
 
 .imgProduit {
@@ -278,7 +279,8 @@ header {
 
 /* NOS SERVICES */
 
-.carteServie {
+.carteService {
+  margin-top: 30px;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 1px 1px 5px 1px lightgray;
@@ -299,7 +301,7 @@ header {
 
 /* Autre */
 .bgBlue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .mb-30 {
@@ -308,4 +310,19 @@ header {
 
 .mt-10 {
   margin-top: 10px;
+}
+
+/* FOOTER */
+
+.bgGrey {
+  background-color: rgb(225, 225, 225);
+}
+
+.footer-50 {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.bold {
+  font-weight: bold;
 }
